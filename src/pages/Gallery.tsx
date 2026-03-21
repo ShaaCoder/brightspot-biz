@@ -37,7 +37,9 @@ const images: GalleryImage[] = [
 
 const reels: GalleryReel[] = [
   // Add Instagram / YouTube reels here
-  // { url: "https://www.instagram.com/reel/...", thumbnail: "...", title: "..." },
+  { url: "https://www.instagram.com/stackbyshaan/reel/DTyA2H1Enwb/", title: "Product Showcase" },
+  { url: "https://www.instagram.com/stackbyshaan/reel/DTvbnO5Eg8t/", title: "Cleaning Solutions" },
+  { url: "https://www.instagram.com/stackbyshaan/reel/DTSzWgbEq1g/", title: "Behind the Scenes" },
 ];
 
 const tabs = ["All", "Images", "Reels"] as const;
