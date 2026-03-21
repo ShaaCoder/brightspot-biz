@@ -20,7 +20,6 @@ interface GalleryImage {
 
 interface GalleryReel {
   url: string;
-  thumbnail: string;
   title: string;
 }
 
