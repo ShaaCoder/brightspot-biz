@@ -8,6 +8,8 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import Index from "./pages/Index.tsx";
 import Services from "./pages/Services.tsx";
+import Products from "./pages/Products.tsx";
+import ProductDetail from "./pages/ProductDetail.tsx";
 import About from "./pages/About.tsx";
 import Contact from "./pages/Contact.tsx";
 import NotFound from "./pages/NotFound.tsx";
