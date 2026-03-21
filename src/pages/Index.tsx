@@ -1,8 +1,10 @@
-import { Phone, MessageCircle, Home, Trash2, Building2, Package, Shield, Clock, BadgeCheck, ThumbsUp, Star } from "lucide-react";
+import { Phone, MessageCircle, Home, Trash2, Building2, Package, Shield, Clock, BadgeCheck, ThumbsUp, Star, ShoppingBag, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
 import heroImg from "@/assets/hero-cleaning.jpg";
+import { products } from "@/data/products";
 
 const services = [
   { icon: Home, title: "House Cleaning", desc: "Deep cleaning, regular maintenance, and move-in/out cleaning for homes across Delhi." },
