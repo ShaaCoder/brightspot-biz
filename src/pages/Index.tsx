@@ -1,8 +1,10 @@
-import { Phone, MessageCircle, Home, Trash2, Building2, Package, Shield, Clock, BadgeCheck, ThumbsUp, Star } from "lucide-react";
+import { Phone, MessageCircle, Home, Trash2, Building2, Package, Shield, Clock, BadgeCheck, ThumbsUp, Star, ShoppingBag, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
 import heroImg from "@/assets/hero-cleaning.jpg";
+import { products } from "@/data/products";
 
 const services = [
   { icon: Home, title: "House Cleaning", desc: "Deep cleaning, regular maintenance, and move-in/out cleaning for homes across Delhi." },
@@ -30,6 +32,8 @@ const fadeUp = {
   viewport: { once: true },
   transition: { duration: 0.5 },
 };
+
+const featuredProducts = products.filter((p) => p.images.length > 0).slice(0, 4);
 
 const Index = () => {
   return (
@@ -108,7 +112,50 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Why Choose Us */}
+      {/* Featured Products */}
+      <section className="bg-muted/50 py-20">
+        <div className="container">
+          <SectionHeading badge="Our Products" title="Featured Products" description="Premium cleaning products manufactured by Bharat Advance" />
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {featuredProducts.map((product, i) => (
+              <motion.div
+                key={product.id}
+                {...fadeUp}
+                transition={{ delay: i * 0.1, duration: 0.5 }}
+              >
+                <Link
+                  to={`/products/${product.id}`}
+                  className="group block overflow-hidden rounded-xl border border-border bg-card shadow-card transition-all hover:shadow-card-hover"
+                >
+                  <div className="aspect-square overflow-hidden bg-muted">
+                    <img
+                      src={product.images[0]}
+                      alt={product.name}
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-heading text-sm font-bold text-foreground line-clamp-1">{product.name}</h3>
+                    <div className="mt-1 flex items-baseline gap-1">
+                      <span className="text-lg font-bold text-primary">₹{product.sizes[0].price}</span>
+                      <span className="text-xs text-muted-foreground">/ {product.sizes[0].qty}</span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Button asChild variant="outline" size="lg">
+              <Link to="/products" className="gap-2">
+                View All Products <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-muted py-20">
         <div className="container">
           <SectionHeading badge="Why Us" title="Why Choose BMN Enterprises?" description="We go above and beyond to deliver the best cleaning experience." />
