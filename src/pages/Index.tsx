@@ -33,6 +33,8 @@ const fadeUp = {
   transition: { duration: 0.5 },
 };
 
+const featuredProducts = products.filter((p) => p.images.length > 0).slice(0, 4);
+
 const Index = () => {
   return (
     <div>
