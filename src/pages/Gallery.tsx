@@ -20,7 +20,6 @@ interface GalleryImage {
 
 interface GalleryReel {
   url: string;
-  thumbnail: string;
   title: string;
 }
 
@@ -37,7 +36,9 @@ const images: GalleryImage[] = [
 
 const reels: GalleryReel[] = [
   // Add Instagram / YouTube reels here
-  // { url: "https://www.instagram.com/reel/...", thumbnail: "...", title: "..." },
+  { url: "https://www.instagram.com/stackbyshaan/reel/DTyA2H1Enwb/", title: "Product Showcase" },
+  { url: "https://www.instagram.com/stackbyshaan/reel/DTvbnO5Eg8t/", title: "Cleaning Solutions" },
+  { url: "https://www.instagram.com/stackbyshaan/reel/DTSzWgbEq1g/", title: "Behind the Scenes" },
 ];
 
 const tabs = ["All", "Images", "Reels"] as const;
@@ -133,37 +134,33 @@ const Gallery = () => {
                 <SectionHeading title="Reels & Videos" description="Watch our latest reels and product demos" />
               )}
               {reels.length > 0 ? (
-                <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                  {reels.map((reel, i) => (
-                    <motion.a
-                      key={i}
-                      href={reel.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: i * 0.05, duration: 0.4 }}
-                      className="group overflow-hidden rounded-xl border border-border bg-card shadow-card"
-                    >
-                      <div className="relative aspect-[9/16] overflow-hidden">
-                        <img
-                          src={reel.thumbnail}
-                          alt={reel.title}
-                          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                          loading="lazy"
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center bg-foreground/30 opacity-0 transition-opacity group-hover:opacity-100">
-                          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                            <Play className="h-6 w-6" />
-                          </div>
+                <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+                  {reels.map((reel, i) => {
+                    const embedUrl = reel.url.replace(/\/$/, "") + "/embed";
+                    return (
+                      <motion.div
+                        key={i}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: i * 0.05, duration: 0.4 }}
+                        className="overflow-hidden rounded-xl border border-border bg-card shadow-card"
+                      >
+                        <div className="aspect-[9/16]">
+                          <iframe
+                            src={embedUrl}
+                            className="h-full w-full border-0"
+                            allowFullScreen
+                            loading="lazy"
+                            title={reel.title}
+                          />
                         </div>
-                      </div>
-                      <div className="p-3">
-                        <p className="text-sm font-medium text-foreground line-clamp-1">{reel.title}</p>
-                      </div>
-                    </motion.a>
-                  ))}
+                        <div className="p-3">
+                          <p className="text-sm font-medium text-foreground line-clamp-1">{reel.title}</p>
+                        </div>
+                      </motion.div>
+                    );
+                  })}
                 </div>
               ) : (
                 <div className="flex flex-col items-center justify-center rounded-xl border border-dashed border-border py-20 text-center">
