@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, MessageCircle, MapPin, Mail } from "lucide-react";
+import logo from "@/assets/bmn-logo.jpeg";
 
 const Footer = () => {
   return (
