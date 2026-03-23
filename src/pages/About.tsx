@@ -1,20 +1,20 @@
-import { Users, Target, Heart, Award, ShieldCheck, FileCheck, Stamp, MapPin } from "lucide-react";
+import { Users, Target, Heart, Award, ShieldCheck, FileCheck, Stamp, MapPin, Factory, Leaf, ShoppingCart } from "lucide-react";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
 import PageMeta from "@/components/PageMeta";
 
 const values = [
-  { icon: Heart, title: "Customer First", desc: "Every decision we make is with our customers in mind." },
-  { icon: Target, title: "Quality Focused", desc: "We never cut corners — only dirt." },
-  { icon: Users, title: "Trusted Team", desc: "Verified, trained, and dedicated professionals." },
-  { icon: Award, title: "3+ Years Experience", desc: "Serving Delhi NCR with pride since 2022." },
+  { icon: Heart, title: "Customer Satisfaction", desc: "Your clean home is our success — we prioritize quality & value." },
+  { icon: Target, title: "Superior Quality", desc: "Effective formulas that actually work — no shortcuts." },
+  { icon: Leaf, title: "Eco-Conscious", desc: "Safer ingredients & sustainable packaging whenever possible." },
+  { icon: Award, title: "Trusted Since 2022", desc: "Proudly serving Delhi NCR households & businesses." },
 ];
 
 const credentials = [
-  { icon: ShieldCheck, title: "Udyam Registered", detail: "UDYAM-DL-06-0142080", desc: "Registered Micro Enterprise under MSME, Govt. of India" },
-  { icon: FileCheck, title: "GST Registered", detail: "07DQNPR1437Q1ZZ", desc: "Fully compliant with GST regulations since 2022" },
-  { icon: Stamp, title: "Trademark Applied", detail: "Bharat Advance™", desc: "Trademark registered for cleaning & laundry products (Class 03)" },
-  { icon: MapPin, title: "Established Address", detail: "Vijay Vihar Phase-2, Rohini", desc: "House No-107, Block I, Delhi-110085" },
+  { icon: ShieldCheck, title: "Udyam Registered", detail: "UDYAM-DL-06-0142080", desc: "MSME Micro Enterprise – Govt. of India" },
+  { icon: FileCheck, title: "GST Registered", detail: "07DQNPR1437Q1ZZ", desc: "Fully compliant since incorporation" },
+  { icon: Stamp, title: "Trademark Applied", detail: "Bharat Advance™", desc: "Protected brand for cleaning products (Class 03)" },
+  { icon: MapPin, title: "Our Location", detail: "Vijay Vihar Phase-2, Rohini", desc: "House No-107, Block I, Delhi-110085" },
 ];
 
 const fadeUp = {
@@ -26,7 +26,11 @@ const fadeUp = {
 const About = () => {
   return (
     <div>
-      <PageMeta title="About Us" description="Bharat Advance (BMN Enterprises) — Udyam & GST registered cleaning company in Rohini, Delhi. Founded by Nitin Rathor in 2022." />
+      <PageMeta 
+        title="About Bharat Advance | Premium Cleaning Products in Delhi NCR"
+        description="Discover Bharat Advance – trusted manufacturer & supplier of high-quality floor cleaners, toilet cleaners, kitchen degreasers & disinfectants in Rohini, Delhi since 2022. Udyam & GST registered. Buy effective household cleaning products online or locally today."
+      />
+
       <section className="gradient-primary py-20">
         <div className="container text-center">
           <motion.h1
@@ -34,49 +38,73 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            About Us
+            About Bharat Advance
           </motion.h1>
           <motion.p
-            className="mt-4 text-primary-foreground/80 max-w-xl mx-auto"
+            className="mt-4 text-primary-foreground/80 max-w-2xl mx-auto text-lg"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            Your local, trusted cleaning partner in Rohini, Delhi.
+            Premium cleaning products made with care — for homes and businesses in Delhi NCR.
           </motion.p>
         </div>
       </section>
 
       <section className="py-20">
         <div className="container">
-          <div className="mx-auto max-w-3xl">
-            <motion.div {...fadeUp} className="space-y-5 text-muted-foreground leading-relaxed">
+          <div className="mx-auto max-w-4xl prose prose-lg prose-headings:text-foreground prose-strong:text-foreground">
+            <motion.div {...fadeUp} className="space-y-6 text-muted-foreground leading-relaxed">
+              <h2 className="text-3xl font-bold text-foreground">Who We Are</h2>
               <p>
-                <strong className="text-foreground">BMN Enterprises Bharat Advance</strong> is a Delhi-based cleaning and disposal service company headquartered in Rohini, Delhi. Founded by <strong className="text-foreground">Nitin Rathor</strong> and incorporated on <strong className="text-foreground">15th October 2022</strong>, we are a registered Micro Enterprise under MSME (Udyam) and fully GST compliant.
+                <strong>Bharat Advance (BMN Enterprises)</strong> is a proud Delhi-based manufacturer and supplier of high-quality <strong>household cleaning products</strong>. Founded by <strong>Nitin Rathor</strong> on <strong>15th October 2022</strong> and headquartered in Rohini, Delhi, we are a fully <strong>Udyam-registered MSME</strong> and <strong>GST-compliant</strong> business dedicated to delivering effective, affordable, and reliable cleaning solutions.
+              </p>
+
+              <p>
+                What began as a mission to provide dependable <strong>cleaning products in Delhi NCR</strong> has grown into a trusted name for thousands of households and small businesses across Rohini, North Delhi, and the wider NCR region. We specialize in manufacturing and selling premium formulations including <a href="/products/floor-cleaners" className="text-primary hover:underline">floor cleaners</a>, <a href="/products/toilet-cleaners" className="text-primary hover:underline">toilet & bathroom cleaners</a>, kitchen degreasers, disinfectants, glass cleaners, and multi-purpose surface solutions under the <strong>Bharat Advance™</strong> brand.
+              </p>
+
+              <h2 className="text-3xl font-bold text-foreground mt-12">Our Product Philosophy</h2>
+              <p>
+                At Bharat Advance, we believe cleaning should be <strong>effective without compromise</strong>. Our products are formulated to tackle tough Indian household challenges — from stubborn kitchen grease and bathroom limescale to daily floor dirt on marble, tiles, and vitrified surfaces. We focus on:
+              </p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Powerful yet value-for-money concentrated formulas</li>
+                <li>Long-lasting fragrances that keep homes fresh</li>
+                <li>Safer, skin-friendly ingredients where possible</li>
+                <li>Eco-conscious packaging options</li>
+                <li>99.9% germ-kill claims backed by real performance</li>
+              </ul>
+
+              <p>
+                Whether you're looking for <strong>best floor cleaners in Delhi</strong>, reliable <strong>toilet cleaners in Rohini</strong>, or bulk <strong>disinfectants for home and office</strong>, we aim to be your go-to source for consistent quality.
+              </p>
+
+              <h2 className="text-3xl font-bold text-foreground mt-12">Why Families & Businesses in Delhi NCR Choose Us</h2>
+              <p>
+                Living in a fast-paced city like Delhi means dust, pollution, and hard water are everyday battles. Our locally made products are designed with Delhi NCR conditions in mind — better results, better value, and faster availability. We serve customers directly from our Rohini base and through quick local delivery — making it easy to <strong>buy cleaning products online in Delhi</strong> or pick up in person.
               </p>
               <p>
-                With over 3 years of hands-on experience, we have served hundreds of homes, offices, and commercial spaces across Delhi NCR. We also manufacture and sell premium cleaning products under our <strong className="text-foreground">Bharat Advance™</strong> brand — including phenyl, toilet cleaners, glass cleaners, and floor cleaners.
-              </p>
-              <p>
-                We started with a simple mission: to make professional cleaning services accessible, affordable, and reliable for everyone. From a small team serving our local neighborhood, we've grown into a trusted name that businesses and families rely on for their cleaning needs.
-              </p>
-              <p>
-                Our trained and background-verified staff use modern equipment and eco-friendly products to deliver results that speak for themselves. Whether it's a one-time deep clean or a long-term maintenance contract, we treat every job with the same dedication and attention to detail.
+                Over the years, we've earned trust through consistent quality, transparent pricing, and genuine care for customer satisfaction. From small apartments in Vijay Vihar to offices in Rohini Sector- Asc, our <strong>cleaning supplies</strong> help keep spaces hygienic and welcoming.
               </p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Business Credentials */}
+      {/* Credentials */}
       <section className="bg-muted/50 py-20">
         <div className="container">
-          <SectionHeading badge="Verified Business" title="Our Credentials" description="Government registered and fully compliant — your trust is our priority." />
-          <div className="grid gap-6 sm:grid-cols-2">
+          <SectionHeading 
+            badge="Verified & Compliant" 
+            title="Our Business Credentials" 
+            description="Government-recognized and fully transparent — shop with complete confidence." 
+          />
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mt-10">
             {credentials.map((c, i) => (
               <motion.div
                 key={c.title}
-                className="rounded-xl border border-border bg-card p-6 shadow-card"
+                className="rounded-xl border border-border bg-card p-6 shadow-card hover:shadow-card-hover transition-all"
                 {...fadeUp}
                 transition={{ delay: i * 0.1, duration: 0.5 }}
               >
@@ -86,8 +114,8 @@ const About = () => {
                   </div>
                   <div>
                     <h3 className="font-heading font-semibold text-foreground">{c.title}</h3>
-                    <p className="mt-0.5 text-sm font-mono text-primary">{c.detail}</p>
-                    <p className="mt-1 text-sm text-muted-foreground">{c.desc}</p>
+                    <p className="mt-1 text-sm font-mono text-primary">{c.detail}</p>
+                    <p className="mt-2 text-sm text-muted-foreground">{c.desc}</p>
                   </div>
                 </div>
               </motion.div>
@@ -96,10 +124,11 @@ const About = () => {
         </div>
       </section>
 
-      <section className="bg-muted py-20">
+      {/* Values */}
+      <section className="py-20">
         <div className="container">
-          <SectionHeading badge="Our Values" title="What Drives Us" />
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <SectionHeading badge="Our Core" title="What Drives Bharat Advance" />
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 mt-12">
             {values.map((v, i) => (
               <motion.div
                 key={v.title}
@@ -107,13 +136,31 @@ const About = () => {
                 {...fadeUp}
                 transition={{ delay: i * 0.1, duration: 0.5 }}
               >
-                <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full gradient-primary text-primary-foreground">
+                <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-full gradient-primary text-primary-foreground shadow-md">
                   <v.icon className="h-7 w-7" />
                 </div>
-                <h3 className="font-heading font-semibold text-foreground">{v.title}</h3>
-                <p className="mt-1 text-sm text-muted-foreground">{v.desc}</p>
+                <h3 className="font-heading font-semibold text-foreground text-lg">{v.title}</h3>
+                <p className="mt-3 text-sm text-muted-foreground">{v.desc}</p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA-ish section */}
+      <section className="bg-muted py-16">
+        <div className="container text-center">
+          <SectionHeading 
+            title="Ready for a Cleaner Home?" 
+            description="Explore our range of powerful, affordable cleaning products today — made in Delhi, for Delhi NCR." 
+          />
+          <div className="mt-8">
+            <a 
+              href="/products" 
+              className="inline-flex items-center justify-center rounded-md bg-primary px-8 py-3 text-base font-medium text-primary-foreground shadow transition hover:bg-primary/90"
+            >
+              <ShoppingCart className="mr-2 h-5 w-5" /> Shop Cleaning Products Now
+            </a>
           </div>
         </div>
       </section>
