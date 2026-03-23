@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-10 border-t border-background/10 pt-6 text-center text-xs opacity-50">
-          © {new Date().getFullYear()} BMN Enterprises Bharat Advance. All rights reserved.
+          © {new Date().getFullYear()} Bharat Advance (BMN Enterprises). All rights reserved.
         </div>
       </div>
     </footer>
