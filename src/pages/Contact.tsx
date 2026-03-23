@@ -111,15 +111,29 @@ const Contact = () => {
 
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button variant="outline" size="lg" asChild>
-                  <a href="tel:9999018783" className="gap-2">
-                    <Phone className="h-5 w-5" /> Call Now
+                  <a href="tel:9582139182" className="gap-2">
+                    <Phone className="h-5 w-5" /> 95821 39182
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="https://wa.me/9199990188783" target="_blank" rel="noopener noreferrer" className="gap-2">
+                  <a href="tel:9990188783" className="gap-2">
+                    <Phone className="h-5 w-5" /> 99901 88783
+                  </a>
+                </Button>
+                <Button variant="outline" size="lg" asChild>
+                  <a href="https://wa.me/919990188783" target="_blank" rel="noopener noreferrer" className="gap-2">
                     <MessageCircle className="h-5 w-5" /> WhatsApp
                   </a>
                 </Button>
+              </div>
+
+              <div className="mt-4 space-y-2 text-sm text-muted-foreground">
+                <a href="mailto:bmnenterprises22@gmail.com" className="flex items-center gap-2 hover:text-foreground transition-colors">
+                  <Mail className="h-4 w-4" /> bmnenterprises22@gmail.com
+                </a>
+                <a href="mailto:bharatadvance96@gmail.com" className="flex items-center gap-2 hover:text-foreground transition-colors">
+                  <Mail className="h-4 w-4" /> bharatadvance96@gmail.com
+                </a>
               </div>
             </motion.div>
 
