@@ -46,6 +46,7 @@ const fadeUp = {
 const Services = () => {
   return (
     <div>
+      <PageMeta title="Our Services" description="House cleaning, waste disposal, office cleaning & sanitization services in Delhi NCR by Bharat Advance. Call 9582139182." />
       <section className="gradient-primary py-20">
         <div className="container text-center">
           <motion.h1

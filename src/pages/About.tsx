@@ -26,6 +26,7 @@ const fadeUp = {
 const About = () => {
   return (
     <div>
+      <PageMeta title="About Us" description="Bharat Advance (BMN Enterprises) — Udyam & GST registered cleaning company in Rohini, Delhi. Founded by Nitin Rathor in 2022." />
       <section className="gradient-primary py-20">
         <div className="container text-center">
           <motion.h1

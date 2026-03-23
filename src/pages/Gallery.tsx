@@ -51,7 +51,7 @@ const Gallery = () => {
 
   return (
     <div>
-      {/* Hero */}
+      <PageMeta title="Gallery" description="Photos and videos of Bharat Advance cleaning products, services and team at work in Delhi NCR." />
       <section className="gradient-primary py-20">
         <div className="container text-center">
           <motion.h1
