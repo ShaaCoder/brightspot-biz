@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, MessageCircle, MapPin } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -111,15 +111,29 @@ const Contact = () => {
 
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button variant="outline" size="lg" asChild>
-                  <a href="tel:9999018783" className="gap-2">
-                    <Phone className="h-5 w-5" /> Call Now
+                  <a href="tel:9582139182" className="gap-2">
+                    <Phone className="h-5 w-5" /> 95821 39182
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="https://wa.me/9199990188783" target="_blank" rel="noopener noreferrer" className="gap-2">
+                  <a href="tel:9990188783" className="gap-2">
+                    <Phone className="h-5 w-5" /> 99901 88783
+                  </a>
+                </Button>
+                <Button variant="outline" size="lg" asChild>
+                  <a href="https://wa.me/919990188783" target="_blank" rel="noopener noreferrer" className="gap-2">
                     <MessageCircle className="h-5 w-5" /> WhatsApp
                   </a>
                 </Button>
+              </div>
+
+              <div className="mt-4 space-y-2 text-sm text-muted-foreground">
+                <a href="mailto:bmnenterprises22@gmail.com" className="flex items-center gap-2 hover:text-foreground transition-colors">
+                  <Mail className="h-4 w-4" /> bmnenterprises22@gmail.com
+                </a>
+                <a href="mailto:bharatadvance96@gmail.com" className="flex items-center gap-2 hover:text-foreground transition-colors">
+                  <Mail className="h-4 w-4" /> bharatadvance96@gmail.com
+                </a>
               </div>
             </motion.div>
 
@@ -128,7 +142,7 @@ const Contact = () => {
               <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Find Us</h2>
               <div className="mb-6 flex items-start gap-3 text-muted-foreground">
                 <MapPin className="h-5 w-5 mt-0.5 shrink-0 text-primary" />
-                <p>Rohini, Delhi, India</p>
+                <p>House No-107, Vijay Vihar Phase-2, Rohini, Delhi-110085</p>
               </div>
               <div className="overflow-hidden rounded-xl border border-border">
                 <iframe

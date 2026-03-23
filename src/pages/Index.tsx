@@ -76,12 +76,12 @@ const Index = () => {
             transition={{ delay: 0.7 }}
           >
             <Button size="lg" asChild>
-              <a href="tel:9999018783" className="gap-2">
+              <a href="tel:9582139182" className="gap-2">
                 <Phone className="h-5 w-5" /> Call Now
               </a>
             </Button>
             <Button size="lg" variant="outline" className="border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20" asChild>
-              <a href="https://wa.me/9199990188783" target="_blank" rel="noopener noreferrer" className="gap-2">
+              <a href="https://wa.me/919990188783" target="_blank" rel="noopener noreferrer" className="gap-2">
                 <MessageCircle className="h-5 w-5" /> WhatsApp Us
               </a>
             </Button>
@@ -225,12 +225,12 @@ const Index = () => {
             transition={{ delay: 0.2 }}
           >
             <Button size="lg" variant="secondary" asChild>
-              <a href="tel:9999018783" className="gap-2">
+              <a href="tel:9582139182" className="gap-2">
                 <Phone className="h-5 w-5" /> Call Now
               </a>
             </Button>
             <Button size="lg" variant="outline" className="border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20" asChild>
-              <a href="https://wa.me/9199990188783" target="_blank" rel="noopener noreferrer" className="gap-2">
+              <a href="https://wa.me/919990188783" target="_blank" rel="noopener noreferrer" className="gap-2">
                 <MessageCircle className="h-5 w-5" /> WhatsApp Us
               </a>
             </Button>

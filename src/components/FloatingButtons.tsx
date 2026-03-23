@@ -5,7 +5,7 @@ const FloatingButtons = () => {
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
       <motion.a
-        href="tel:9999018783"
+        href="tel:9582139182"
         className="flex h-14 w-14 items-center justify-center rounded-full bg-secondary text-secondary-foreground shadow-lg transition-transform hover:scale-110"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
@@ -17,7 +17,7 @@ const FloatingButtons = () => {
         <Phone className="h-6 w-6" />
       </motion.a>
       <motion.a
-        href="https://wa.me/9199990188783"
+        href="https://wa.me/919990188783"
         target="_blank"
         rel="noopener noreferrer"
         className="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition-transform hover:scale-110"
