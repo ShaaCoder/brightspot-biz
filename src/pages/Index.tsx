@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
+import PageMeta from "@/components/PageMeta";
 import heroImg from "@/assets/hero-cleaning.jpg";
 import { products } from "@/data/products";
 
