@@ -9,10 +9,8 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg gradient-primary">
-                <span className="text-sm font-bold text-primary-foreground">B</span>
-              </div>
-              <span className="font-heading font-bold">BMN Enterprises</span>
+              <img src={logo} alt="Bharat Advance Logo" className="h-10 w-10 rounded-full object-cover" />
+              <span className="font-heading font-bold">Bharat Advance</span>
             </div>
             <p className="text-sm opacity-70 leading-relaxed">
               Professional cleaning and disposal services in Rohini, Delhi. 
