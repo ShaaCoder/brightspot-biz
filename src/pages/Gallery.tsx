@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Play, Image as ImageIcon, Film } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
+import PageMeta from "@/components/PageMeta";
 
 import whitePhenyl from "@/assets/products/white-phenyl.jpg";
 import whitePhenylBack from "@/assets/products/white-phenyl-back.jpg";

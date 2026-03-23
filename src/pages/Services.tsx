@@ -2,6 +2,7 @@ import { Home, Trash2, Building2, Package, Sparkles, Wrench, Phone, MessageCircl
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
+import PageMeta from "@/components/PageMeta";
 
 const services = [
   {

@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, Phone, MessageCircle, ShoppingBag, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import PageMeta from "@/components/PageMeta";
 import { getProductById, products } from "@/data/products";
 
 const ProductDetail = () => {

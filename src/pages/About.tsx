@@ -1,6 +1,7 @@
 import { Users, Target, Heart, Award, ShieldCheck, FileCheck, Stamp, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
+import PageMeta from "@/components/PageMeta";
 
 const values = [
   { icon: Heart, title: "Customer First", desc: "Every decision we make is with our customers in mind." },
