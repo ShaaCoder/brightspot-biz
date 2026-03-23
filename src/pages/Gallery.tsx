@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Play, Image as ImageIcon, Film } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
+import PageMeta from "@/components/PageMeta";
 
 import whitePhenyl from "@/assets/products/white-phenyl.jpg";
 import whitePhenylBack from "@/assets/products/white-phenyl-back.jpg";
@@ -50,7 +51,7 @@ const Gallery = () => {
 
   return (
     <div>
-      {/* Hero */}
+      <PageMeta title="Gallery" description="Photos and videos of Bharat Advance cleaning products, services and team at work in Delhi NCR." />
       <section className="gradient-primary py-20">
         <div className="container text-center">
           <motion.h1

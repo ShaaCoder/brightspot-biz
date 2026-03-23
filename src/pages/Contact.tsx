@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { motion } from "framer-motion";
+import PageMeta from "@/components/PageMeta";
 import { toast } from "sonner";
 import { z } from "zod";
 
@@ -48,6 +49,7 @@ const Contact = () => {
 
   return (
     <div>
+      <PageMeta title="Contact Us" description="Contact Bharat Advance for cleaning services in Delhi. Call 9582139182, WhatsApp 9990188783, or email bmnenterprises22@gmail.com." />
       <section className="gradient-primary py-20">
         <div className="container text-center">
           <motion.h1

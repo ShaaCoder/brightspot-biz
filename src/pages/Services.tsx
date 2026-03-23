@@ -2,6 +2,7 @@ import { Home, Trash2, Building2, Package, Sparkles, Wrench, Phone, MessageCircl
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
+import PageMeta from "@/components/PageMeta";
 
 const services = [
   {
@@ -45,6 +46,7 @@ const fadeUp = {
 const Services = () => {
   return (
     <div>
+      <PageMeta title="Our Services" description="House cleaning, waste disposal, office cleaning & sanitization services in Delhi NCR by Bharat Advance. Call 9582139182." />
       <section className="gradient-primary py-20">
         <div className="container text-center">
           <motion.h1

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
+import PageMeta from "@/components/PageMeta";
 import heroImg from "@/assets/hero-cleaning.jpg";
 import { products } from "@/data/products";
 
@@ -38,7 +39,7 @@ const featuredProducts = products.filter((p) => p.images.length > 0).slice(0, 4)
 const Index = () => {
   return (
     <div>
-      {/* Hero */}
+      <PageMeta title="Professional Cleaning Services in Delhi" description="Bharat Advance — Fast, affordable & reliable cleaning, waste disposal & sanitization services in Rohini, Delhi NCR. Call 9582139182." />
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroImg} alt="Professional cleaning services in Delhi" className="h-full w-full object-cover" />

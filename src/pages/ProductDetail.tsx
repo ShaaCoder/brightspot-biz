@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, Phone, MessageCircle, ShoppingBag, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import PageMeta from "@/components/PageMeta";
 import { getProductById, products } from "@/data/products";
 
 const ProductDetail = () => {
@@ -31,6 +32,7 @@ const ProductDetail = () => {
 
   return (
     <div>
+      <PageMeta title={product.name} description={`Buy ${product.name} by Bharat Advance. ${product.description.slice(0, 120)}`} />
       <div className="container py-8">
         <Link to="/products" className="mb-6 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
           <ArrowLeft className="h-4 w-4" /> Back to Products

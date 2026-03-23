@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ShoppingBag, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SectionHeading from "@/components/SectionHeading";
+import PageMeta from "@/components/PageMeta";
 import { products, categories } from "@/data/products";
 
 const Products = () => {
@@ -12,6 +13,7 @@ const Products = () => {
 
   return (
     <div>
+      <PageMeta title="Cleaning Products" description="Buy premium Bharat Advance cleaning products — phenyl, toilet cleaner, glass cleaner, floor cleaner & handwash. Order via WhatsApp." />
       <section className="gradient-primary py-20">
         <div className="container text-center">
           <motion.h1

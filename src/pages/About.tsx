@@ -1,6 +1,7 @@
 import { Users, Target, Heart, Award, ShieldCheck, FileCheck, Stamp, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
+import PageMeta from "@/components/PageMeta";
 
 const values = [
   { icon: Heart, title: "Customer First", desc: "Every decision we make is with our customers in mind." },
@@ -25,6 +26,7 @@ const fadeUp = {
 const About = () => {
   return (
     <div>
+      <PageMeta title="About Us" description="Bharat Advance (BMN Enterprises) — Udyam & GST registered cleaning company in Rohini, Delhi. Founded by Nitin Rathor in 2022." />
       <section className="gradient-primary py-20">
         <div className="container text-center">
           <motion.h1

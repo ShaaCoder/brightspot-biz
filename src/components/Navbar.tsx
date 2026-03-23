@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/bmn-logo.jpeg";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -21,13 +22,8 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-lg">
       <div className="container flex h-16 items-center justify-between md:h-20">
         <Link to="/" className="flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg gradient-primary">
-            <span className="text-lg font-bold text-primary-foreground">B</span>
-          </div>
-          <div className="flex flex-col leading-tight">
-            <span className="font-heading text-sm font-bold text-foreground md:text-base">BMN Enterprises</span>
-            <span className="text-[10px] text-muted-foreground md:text-xs">Bharat Advance</span>
-          </div>
+          <img src={logo} alt="Bharat Advance Logo" className="h-10 w-10 rounded-full object-cover md:h-12 md:w-12" />
+          <span className="font-heading text-base font-bold text-foreground md:text-lg">Bharat Advance</span>
         </Link>
 
         <div className="hidden items-center gap-1 md:flex">
