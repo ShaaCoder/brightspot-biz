@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, MessageCircle, MapPin } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
