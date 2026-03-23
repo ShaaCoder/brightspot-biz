@@ -225,7 +225,7 @@ const Index = () => {
             transition={{ delay: 0.2 }}
           >
             <Button size="lg" variant="secondary" asChild>
-              <a href="tel:9999018783" className="gap-2">
+              <a href="tel:9582139182" className="gap-2">
                 <Phone className="h-5 w-5" /> Call Now
               </a>
             </Button>
