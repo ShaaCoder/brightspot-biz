@@ -44,14 +44,23 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold mb-4">Contact Us</h4>
             <div className="flex flex-col gap-3 text-sm opacity-70">
-              <a href="tel:9999018783" className="flex items-center gap-2 hover:opacity-100 transition-opacity">
-                <Phone className="h-4 w-4" /> 99990 18783
+              <a href="tel:9582139182" className="flex items-center gap-2 hover:opacity-100 transition-opacity">
+                <Phone className="h-4 w-4" /> 95821 39182
               </a>
-              <a href="https://wa.me/9199990188783" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-100 transition-opacity">
+              <a href="tel:9990188783" className="flex items-center gap-2 hover:opacity-100 transition-opacity">
+                <Phone className="h-4 w-4" /> 99901 88783
+              </a>
+              <a href="https://wa.me/919990188783" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-100 transition-opacity">
                 <MessageCircle className="h-4 w-4" /> WhatsApp
               </a>
+              <a href="mailto:bmnenterprises22@gmail.com" className="flex items-center gap-2 hover:opacity-100 transition-opacity">
+                <Mail className="h-4 w-4" /> bmnenterprises22@gmail.com
+              </a>
+              <a href="mailto:bharatadvance96@gmail.com" className="flex items-center gap-2 hover:opacity-100 transition-opacity">
+                <Mail className="h-4 w-4" /> bharatadvance96@gmail.com
+              </a>
               <div className="flex items-start gap-2">
-                <MapPin className="h-4 w-4 mt-0.5 shrink-0" /> Rohini, Delhi, India
+                <MapPin className="h-4 w-4 mt-0.5 shrink-0" /> House No-107, Vijay Vihar Phase-2, Rohini, Delhi-110085
               </div>
             </div>
           </div>

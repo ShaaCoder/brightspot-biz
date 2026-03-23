@@ -17,7 +17,7 @@ const FloatingButtons = () => {
         <Phone className="h-6 w-6" />
       </motion.a>
       <motion.a
-        href="https://wa.me/9199990188783"
+        href="https://wa.me/919990188783"
         target="_blank"
         rel="noopener noreferrer"
         className="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition-transform hover:scale-110"

@@ -142,7 +142,7 @@ const Contact = () => {
               <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Find Us</h2>
               <div className="mb-6 flex items-start gap-3 text-muted-foreground">
                 <MapPin className="h-5 w-5 mt-0.5 shrink-0 text-primary" />
-                <p>Rohini, Delhi, India</p>
+                <p>House No-107, Vijay Vihar Phase-2, Rohini, Delhi-110085</p>
               </div>
               <div className="overflow-hidden rounded-xl border border-border">
                 <iframe
