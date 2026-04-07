@@ -32,7 +32,26 @@ const ProductDetail = () => {
 
   return (
     <div>
-      <PageMeta title={product.name} description={`Buy ${product.name} by Bharat Advance. ${product.description.slice(0, 120)}`} />
+      <PageMeta
+        title={`Buy ${product.name} Online | Cleaning Products Delhi`}
+        description={`Buy ${product.name} at best price from BMN Enterprises. Bulk cleaning and hygiene products supplier in Delhi.`}
+        canonical={`https://bharatadvance.com/products/${product.id}`}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": product.name,
+          "description": product.description,
+          "image": product.images.length > 0 ? product.images[0] : undefined,
+          "brand": { "@type": "Brand", "name": "Bharat Advance" },
+          "offers": product.sizes.map((s) => ({
+            "@type": "Offer",
+            "price": s.price,
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "seller": { "@type": "Organization", "name": "BMN Enterprises Bharat Advance" },
+          })),
+        }}
+      />
       <div className="container py-8">
         <Link to="/products" className="mb-6 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
           <ArrowLeft className="h-4 w-4" /> Back to Products
