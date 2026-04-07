@@ -28,8 +28,9 @@ const About = () => {
   return (
     <div>
       <PageMeta 
-        title="About Bharat Advance | Premium Cleaning Products in Delhi NCR"
-        description="Discover Bharat Advance – trusted manufacturer & supplier of high-quality floor cleaners, toilet cleaners, kitchen degreasers & disinfectants in Rohini, Delhi since 2022. Udyam & GST registered. Buy effective household cleaning products online or locally today."
+        title="About BMN Enterprises | Cleaning Supplier Delhi"
+        description="Learn about BMN Enterprises, co-founded by Nitin Rathore, providing bulk cleaning and housekeeping products across Delhi."
+        canonical="https://bharatadvance.com/about"
       />
 
       <section className="gradient-primary py-20">

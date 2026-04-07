@@ -39,7 +39,11 @@ const featuredProducts = products.filter((p) => p.images.length > 0).slice(0, 4)
 const Index = () => {
   return (
     <div>
-      <PageMeta title="Professional Cleaning Services in Delhi" description="Bharat Advance — Fast, affordable & reliable cleaning, waste disposal & sanitization services in Rohini, Delhi NCR. Call 9582139182." />
+      <PageMeta
+        title="BMN Enterprises Bharat Advance | Cleaning Products Supplier Delhi"
+        description="BMN Enterprises Bharat Advance is a trusted supplier of housekeeping and cleaning products in Delhi. Bulk phenyl, handwash, toilet cleaners & more."
+        canonical="https://bharatadvance.com/"
+      />
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroImg} alt="Professional cleaning services in Delhi" className="h-full w-full object-cover" />

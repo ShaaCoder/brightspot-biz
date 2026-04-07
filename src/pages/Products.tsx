@@ -13,7 +13,11 @@ const Products = () => {
 
   return (
     <div>
-      <PageMeta title="Cleaning Products" description="Buy premium Bharat Advance cleaning products — phenyl, toilet cleaner, glass cleaner, floor cleaner & handwash. Order via WhatsApp." />
+      <PageMeta
+        title="Cleaning & Housekeeping Products | Wholesale Delhi"
+        description="Browse a wide range of cleaning chemicals, hygiene products, and housekeeping materials at wholesale prices."
+        canonical="https://bharatadvance.com/products"
+      />
       <section className="gradient-primary py-20">
         <div className="container text-center">
           <motion.h1
