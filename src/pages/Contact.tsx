@@ -68,8 +68,9 @@ const Contact = () => {
   return (
     <div>
       <PageMeta 
-        title="Contact Us | Bharat Advance Cleaning Products" 
-        description="Get in touch for cleaning products enquiries in Delhi NCR. WhatsApp or call 9582139182, email bmnenterprises22@gmail.com. Premium floor cleaners, toilet cleaners & more."
+        title="Contact BMN Enterprises | Rohini Delhi Supplier" 
+        description="Contact BMN Enterprises for bulk cleaning products in Rohini, Delhi. Fast delivery and best wholesale prices."
+        canonical="https://bharatadvance.com/contact"
       />
 
       <section className="gradient-primary py-20">

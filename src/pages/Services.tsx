@@ -83,8 +83,9 @@ const Products = () => {
   return (
     <div>
       <PageMeta 
-        title="Our Cleaning Products" 
-        description="Buy high-quality floor cleaners, toilet cleaners, kitchen degreasers, disinfectants & more. Fast delivery in Delhi NCR. Call 9582139182 or WhatsApp now." 
+        title="Our Cleaning Products | BMN Enterprises Delhi"
+        description="Buy high-quality floor cleaners, toilet cleaners, kitchen degreasers & disinfectants. Fast delivery in Delhi NCR."
+        canonical="https://bharatadvance.com/services"
       />
 
       <section className="gradient-primary py-20">
